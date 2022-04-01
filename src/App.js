@@ -62,7 +62,7 @@ function App() {
                         setLoading(false);
                     }
                 }else{
-                    const response = await axios.get(`http://gateway.marvel.com/v1/public/characters?limit=12&offset=${offset * 12}&apikey=75ff82aee4aef7e1bdb522eea36271d4}`);
+                    const response = await axios.get(`http://gateway.marvel.com/v1/public/characters?limit=12&offset=${offset * 12}&apikey=75ff82aee4aef7e1bdb522eea36271d4`);
                     const data = response.data.data.results;
                     const total = response.data.data.total;
 
